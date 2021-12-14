@@ -11,15 +11,15 @@ export const PageLayout = (props) => {
     const isAuthenticated = useIsAuthenticated();
 
     return (
-        <>
-            <Navbar bg="primary" variant="dark">
-                <a className="navbar-brand" href="/">MSAL React Tutorial</a>
-                { isAuthenticated ? <SignOutButton /> : <SignInButton /> }
+        <div>
+            <Navbar >
+                <div style={{width:" 100%", padding:"25px"}}>
+                <div style={{width:" 15%",textAlign:" right", paddingRight:'10px', float:'left'}}><img width='100%' src='http://cibuscellai.azurewebsites.net/static/media/cibuscell-logo.c9036873.png'></img></div>
+                { isAuthenticated ? <div style={{width:" 85%",textAlign:" right", paddingRight:'10px', float:'left'}}><SignOutButton /></div> : <div  style={{width:" 85%",textAlign:" right", paddingRight:'10px', float:'left'}}><SignInButton /></div> }
+                    </div>
+                
             </Navbar>
-            <h5><center>Welcome to the Microsoft Authentication Library For React Tutorial</center></h5>
-            <br />
-            <br />
             {props.children}
-        </>
+        </div>
     );
 };

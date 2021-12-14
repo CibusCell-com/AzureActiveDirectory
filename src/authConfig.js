@@ -3,6 +3,7 @@ export const msalConfig = {
       clientId: "3d7b657e-3d14-4508-8500-16745099a977",
       authority: "https://login.microsoftonline.com/cibuscell.com", // This is a URL (e.g. https://login.microsoftonline.com/{your tenant ID})
       redirectUri: "http://localhost:3000",
+      // redirectUri: "https://cibuscellaad.azurewebsites.net/",
     },
     cache: {
       cacheLocation: "sessionStorage", // This configures where your cache will be stored

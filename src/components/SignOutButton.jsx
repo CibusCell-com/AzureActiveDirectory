@@ -15,6 +15,6 @@ export const SignOutButton = () => {
     const { instance } = useMsal();
 
     return (
-        <Button variant="secondary" className="ml-auto" onClick={() => handleLogout(instance)}>Sign out using Popup</Button>
+        <Button style={{backgroundColor:'rgb(2 107 181)', borderColor:'#86d1f5'}} variant="secondary" className="ml-auto" onClick={() => handleLogout(instance)}>Sign out using Popup</Button>
     );
 }
